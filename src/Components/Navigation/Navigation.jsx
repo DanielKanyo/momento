@@ -21,6 +21,9 @@ const styles = {
 };
 
 const theme = createMuiTheme({
+	typography: {
+    useNextVariants: true,
+  },
 	palette: {
 		primary: {
 			main: '#90482E',
@@ -44,7 +47,7 @@ class Navigation extends React.Component {
 
 		const sideList = (
 			<div className={classes.list}>
-				Menu
+				Razvijanje web stranice je u toku…
       </div>
 		);
 
