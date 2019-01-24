@@ -6,6 +6,7 @@ import {
 import * as routes from '../../Constants/routes';
 
 import Home from '../Home/Home';
+import History from '../History/History';
 import Navigation from '../Navigation/Navigation';
 
 import './App.css';
@@ -21,6 +22,11 @@ class App extends Component {
             exact
             path={routes.HOME}
             component={() => <Home />}
+          />
+          <Route
+            exact
+            path={routes.HISTORY}
+            component={() => <History />}
           />
         </div>
       </Router>
