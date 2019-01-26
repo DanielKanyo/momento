@@ -30,9 +30,6 @@ const styles = theme => ({
 		maxWidth: '360px',
 		backgroundColor: theme.palette.background.paper,
 	},
-	subList: {
-		background: '#f4f4f4',
-	},
 	subListItem: {
 		paddingLeft: 36
 	},
@@ -56,6 +53,7 @@ const theme = createMuiTheme({
 class Navigation extends React.Component {
 	state = {
 		open: false,
+		firstSublist: false,
 	};
 
 	toggleDrawer = (open) => () => {
@@ -64,18 +62,8 @@ class Navigation extends React.Component {
 		});
 	};
 
-	toggleSubList = (listNum) => {
-		const list = document.querySelector(`[row="${listNum}"]`);
-		const arrow = document.querySelector(`[arrow="${listNum}"]`);
-
-		if (list.classList.contains('hidden-list')) {
-			list.classList.remove('hidden-list');
-			arrow.classList.remove('rotate');
-		} else {
-			list.classList.add('hidden-list');
-			arrow.classList.add('rotate');
-		}
-
+	toggleSubList = (name) => {
+		this.setState(state => ({ [name]: !state.firstSublist }))
 	}
 
 	render() {
@@ -97,19 +85,37 @@ class Navigation extends React.Component {
 
 					<Divider />
 
-					<ListItem button divider onClick={() => { this.toggleSubList(0) }}>
+					<ListItem button divider onClick={() => { this.toggleSubList('firstSublist') }}>
 						<ListItemText primary="Our Products" />
-						<KeyboardArrowDownIcon arrow={0} className={classes.arrowIcon + ' rotate'} />
+						<KeyboardArrowDownIcon arrow={0} className={classes.arrowIcon + (this.state.firstSublist ? ' rotate' : '')} />
 					</ListItem>
 
-					<List component="nav" row={0} className={classes.subList + ' hidden-list'}>
-						<ListItem className={classes.subListItem} onClick={this.toggleDrawer(false)} button>
+					<List component="nav" row={0} className={'subList ' + (this.state.firstSublist ? '' : 'hidden-list')}>
+						<ListItem
+							component={Link}
+							to={routes.MOMENTO}
+							className={classes.subListItem}
+							onClick={this.toggleDrawer(false)}
+							button
+						>
 							<ListItemText primary="Momento" />
 						</ListItem>
-						<ListItem className={classes.subListItem} onClick={this.toggleDrawer(false)} button>
+						<ListItem
+							component={Link}
+							to={routes.COFFINO}
+							className={classes.subListItem}
+							onClick={this.toggleDrawer(false)}
+							button
+						>
 							<ListItemText primary="Coffino" />
 						</ListItem>
-						<ListItem className={classes.subListItem} onClick={this.toggleDrawer(false)} button>
+						<ListItem
+							component={Link}
+							to={routes.PRIVATELABLES}
+							className={classes.subListItem}
+							onClick={this.toggleDrawer(false)}
+							button
+						>
 							<ListItemText primary="Private Lables" />
 						</ListItem>
 					</List>

@@ -1,9 +1,10 @@
-.site-header {
+body {
     width: 100%;
     height: 100vh;
     background-image: url('../../Images/header-img.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -21,6 +22,10 @@
     border-top-left-radius: 27px;
 }
 
+.subList {
+    background: #f3f3f3;
+}
+
 .hidden-list {
     height: 0;
     padding: 0 !important;
@@ -30,4 +35,19 @@
 .rotate {
     transition: 0.2s;
     transform: rotate(180deg);
+}
+
+.component {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.paper-component * {
+    color: white !important;
+}
+
+.momento-img {
+    width: 100%;
+    border-radius: 4px;
 }
