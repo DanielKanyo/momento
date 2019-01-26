@@ -136,7 +136,7 @@ class Navigation extends React.Component {
 		return (
 			<div>
 				<MuiThemeProvider theme={theme}>
-					<Fab onClick={this.toggleDrawer(true)} color="primary" aria-label="Add" className={classes.fab}>
+					<Fab onClick={this.toggleDrawer(true)} color="primary" aria-label="Add" className={classes.fab + ' menu-btn'}>
 						<MenuIcon />
 					</Fab>
 					<Drawer anchor="right" open={this.state.open} onClose={this.toggleDrawer(false)}>
