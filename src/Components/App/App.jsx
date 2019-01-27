@@ -10,6 +10,7 @@ import History from '../History/History';
 import Momento from '../OurProducts/Momento';
 import Coffino from '../OurProducts/Coffino';
 import PrivateLables from '../OurProducts/PrivateLables';
+import Contact from '../Contact/Contact';
 import Navigation from '../Navigation/Navigation';
 
 import './App.css';
@@ -45,6 +46,11 @@ class App extends Component {
             exact
             path={routes.PRIVATELABLES}
             component={() => <PrivateLables />}
+          />
+          <Route
+            exact
+            path={routes.CONTACT}
+            component={() => <Contact />}
           />
         </div>
       </Router>

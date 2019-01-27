@@ -126,7 +126,12 @@ class Navigation extends React.Component {
 
 					<Divider light />
 
-					<ListItem onClick={this.toggleDrawer(false)} button>
+					<ListItem
+						component={Link}
+						to={routes.CONTACT}
+						onClick={this.toggleDrawer(false)}
+						button
+					>
 						<ListItemText primary="Contact Us" />
 					</ListItem>
 				</List>
