@@ -41,7 +41,8 @@ class Contact extends Component {
 								<li> 
 									<a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://fruitica.rs">FRUITICA d.o.o.</a> 
 								</li>
-								<li>Trg Republike br. 7 | Srbija, Čantavir 24220</li>
+								<li>Trg Republike 7</li>
+								<li>24220 Čantavir, Serbia</li>
 							</ul>
 							<ul>
 								<li>tel: +381 24 782 600</li>
