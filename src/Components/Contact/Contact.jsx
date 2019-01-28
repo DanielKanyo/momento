@@ -38,8 +38,8 @@ class Contact extends Component {
 					<Paper className={classes.paperText} elevation={2}>
 						<Typography variant="subtitle1" gutterBottom>
 							<ul>
-								<li> 
-									<a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://fruitica.rs">FRUITICA d.o.o.</a> 
+								<li>
+									<a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://fruitica.rs">FRUITICA d.o.o.</a>
 								</li>
 								<li>Trg Republike 7</li>
 								<li>24220 Čantavir, Serbia</li>

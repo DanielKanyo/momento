@@ -1,65 +1,79 @@
 body {
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../Images/header-img.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url('../../Images/header-img.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
 }
 
 .logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    background-image: url('../../Images/logo.png');
-    width: 220px;
-    height: 101px;
-    background-position: center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    border-bottom-right-radius: 27px;
-    border-top-left-radius: 27px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background-image: url('../../Images/logo.png');
+	width: 220px;
+	height: 101px;
+	background-position: center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 27px;
+	border-top-left-radius: 27px;
 }
 
 .subList {
-    background: #f3f3f3;
+	background: #f3f3f3;
 }
 
 .hidden-list {
-    height: 0;
-    padding: 0 !important;
-    overflow: hidden;
+	height: 0;
+	padding: 0 !important;
+	overflow: hidden;
 }
 
 .rotate {
-    transition: 0.2s;
-    transform: rotate(180deg);
+	transition: 0.2s;
+	transform: rotate(180deg);
 }
 
 .component {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 30px;
 }
 
 .paper-component * {
-    color: white !important;
+	color: white !important;
 }
 
 .momento-img {
-    width: 100%;
-    border-radius: 4px;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.private-lables-img {
+	border-radius: 4px;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.last-pl-img {
+	margin-bottom: 14px;
 }
 
 @media only screen and (max-width: 600px) {
 
-    .component {
-        padding: 10px;
-    }
+	.component {
+		padding: 10px;
+	}
 
-    .menu-btn {
-        margin: 10px !important;
-    }
+	.menu-btn {
+		margin: 10px !important;
+	}
+
+	.grid {
+		max-width: 100% !important;
+		flex-basis: 100% !important;
+	}
 
 }
