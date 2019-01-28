@@ -4,16 +4,16 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import img1 from '../../Images/3_in1_classic_prikaz.jpg';
-import img2 from '../../Images/160316_PRESSCOFFE_2in1.jpg';
-import img3 from '../../Images/160316_PRESSCOFFE_3in1_14g.jpg';
-import img4 from '../../Images/140316_FRUITICA_MIXCAFFE_CHOCOHAZELNUT_3in1.jpg';
+import img4 from '../../Images/3_in1_classic_prikaz.jpg';
+import img1 from '../../Images/160316_PRESSCOFFE_2in1.jpg';
+import img2 from '../../Images/160316_PRESSCOFFE_3in1_14g.jpg';
+import img6 from '../../Images/140316_FRUITICA_MIXCAFFE_CHOCOHAZELNUT_3in1.jpg';
 import img5 from '../../Images/140316_FRUITICA_MIXCAFFE_STRONG_3in1.jpg';
-import img6 from '../../Images/kesica2_in_1_RGB_za_net.png';
-import img7 from '../../Images/kesica_3_in_1_RGB_za_net.png';
-import img8 from '../../Images/kesica_2_in1_zaproveru.jpg';
-import img9 from '../../Images/Gomex_PL_2u1_3u1_instant_kafa_tog.png';
-import img10 from '../../Images/1-1_Instant_kafa_Korigovan_predlog_resenja.jpg';
+import img7 from '../../Images/kesica2_in_1_RGB_za_net.png';
+import img8 from '../../Images/kesica_3_in_1_RGB_za_net.png';
+import img3 from '../../Images/kesica_2_in1_zaproveru.jpg';
+import img10 from '../../Images/Gomex_PL_2u1_3u1_instant_kafa_tog.png';
+import img9 from '../../Images/1-1_Instant_kafa_Korigovan_predlog_resenja.jpg';
 
 const styles = theme => ({
 	paperTitle: {
@@ -53,20 +53,20 @@ class PrivateLables extends Component {
 
 					<Grid container spacing={16}>
 						<Grid className={'grid'} item xs={4}>
+							<Paper className={classes.paperImg1} elevation={2}>
+								<img className="private-lables-img" src={img1} alt="momento_flajer" height="100%" align="middle" />
+							</Paper>
+
+						</Grid>
+						<Grid className={'grid'} item xs={4}>
+							<Paper className={classes.paperImg1} elevation={2}>
+								<img className="private-lables-img" src={img2} alt="momento_classic" height="100%" align="middle" />
+							</Paper>
+						</Grid>
+
+						<Grid className={'grid'} item xs={4}>
 							<Paper className={classes.paperImg2} elevation={2}>
-								<img className="private-lables-img" src={img1} alt="momento_flajer" width="100%" align="middle" />
-							</Paper>
-
-						</Grid>
-						<Grid className={'grid'} item xs={4}>
-							<Paper className={classes.paperImg1} elevation={2}>
-								<img className="private-lables-img" src={img2} alt="momento_classic" width="auto" height="100%" align="middle" />
-							</Paper>
-						</Grid>
-
-						<Grid className={'grid'} item xs={4}>
-							<Paper className={classes.paperImg1} elevation={2}>
-								<img className="private-lables-img" src={img3} alt="momento_classic" height="100%" align="middle" />
+								<img className="private-lables-img" src={img3} alt="momento_classic" width="100%" align="middle" />
 							</Paper>
 						</Grid>
 
