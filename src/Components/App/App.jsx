@@ -7,9 +7,11 @@ import * as routes from '../../Constants/routes';
 
 import Home from '../Home/Home';
 import History from '../History/History';
+import About from '../About/About';
 import Momento from '../OurProducts/Momento';
 import Coffino from '../OurProducts/Coffino';
 import PrivateLables from '../OurProducts/PrivateLables';
+import WhyMomento from '../WhyMomento/WhyMomento';
 import Contact from '../Contact/Contact';
 import Navigation from '../Navigation/Navigation';
 
@@ -34,6 +36,11 @@ class App extends Component {
           />
           <Route
             exact
+            path={routes.ABOUTUS}
+            component={() => <About />}
+          />
+          <Route
+            exact
             path={routes.MOMENTO}
             component={() => <Momento />}
           />
@@ -46,6 +53,11 @@ class App extends Component {
             exact
             path={routes.PRIVATELABLES}
             component={() => <PrivateLables />}
+          />
+          <Route
+            exact
+            path={routes.WHYMOMENTO}
+            component={() => <WhyMomento />}
           />
           <Route
             exact

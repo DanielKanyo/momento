@@ -85,6 +85,12 @@ class Navigation extends React.Component {
 
 					<Divider />
 
+					<ListItem component={Link} to={routes.ABOUTUS} onClick={this.toggleDrawer(false)} button>
+						<ListItemText primary="About Us" />
+					</ListItem>
+
+					<Divider />
+
 					<ListItem button divider onClick={() => { this.toggleSubList('firstSublist') }}>
 						<ListItemText primary="Our Products" />
 						<KeyboardArrowDownIcon arrow={0} className={classes.arrowIcon + (this.state.firstSublist ? ' rotate' : '')} />
@@ -120,7 +126,7 @@ class Navigation extends React.Component {
 						</ListItem>
 					</List>
 
-					<ListItem onClick={this.toggleDrawer(false)} button>
+					<ListItem component={Link} to={routes.WHYMOMENTO} onClick={this.toggleDrawer(false)} button>
 						<ListItemText primary="Why Momento?" />
 					</ListItem>
 
