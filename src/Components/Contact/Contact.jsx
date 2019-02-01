@@ -15,6 +15,7 @@ const styles = theme => ({
 	paperText: {
 		marginBottom: 14,
 		padding: 15,
+		background: '#ffe6dd'
 	},
 	link: {
 		textDecoration: 'none',
