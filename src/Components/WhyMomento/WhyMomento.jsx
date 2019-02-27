@@ -12,6 +12,10 @@ const styles = theme => ({
 		background: '#90482E',
 		marginBottom: 14,
 	},
+	paperTitleWithImage: {
+		height: 200,
+		marginBottom: 14,
+	},
 	paperText: {
 		marginBottom: 14,
 		padding: 15,
@@ -31,6 +35,8 @@ class WhyMomento extends Component {
 							Why Momento?
         		</Typography>
 					</Paper>
+
+					<Paper className={classes.paperTitleWithImage + ' paper-component-with-image paper-image-why-momento'} elevation={2}></Paper>
 
 					<Paper className={classes.paperText} elevation={2}>
 						<div className="whymomento-text-container">
@@ -56,10 +62,9 @@ class WhyMomento extends Component {
 								levels of activity at Fruitica doo.
 							</p>
 							<p>
-								The achievement of these goals is achieved through the implementation of the quality
-								management system and the safety of products in accordance with the requirements of ISO
-								9001: 2008, BRC Global Standard for Food Safety Issue 5: 2008 and HACCP by CAC / RCP
-								1-1969, Rev. 4-2003, which means:
+								The achievement of these goals is achieved through the implementation of the quality management 
+								system and the safety of products in accordance with the requirements of ISO 9001:2015 and 
+								HACCP by CAC/RCP 1-1969, Rev. 4-2003., which means:
 							</p>
 							<div>
 								<ul>
@@ -99,8 +104,8 @@ class WhyMomento extends Component {
 							</div>
 							<br />
 							<div className="whymomento-bottom-text">
-								<p>General director and founder: Istvan Berenyi</p>
-								<p>Čantavir, September 25, 2008</p>
+								<p>General director: Kornel Feješ</p>
+								<p>Čantavir, November 1, 2017</p>
 							</div>
 						</div>
 					</Paper>
