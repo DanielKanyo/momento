@@ -6,3 +6,4 @@ export const COFFINO = '/ourproducts/coffino';
 export const PRIVATELABLES = '/ourproducts/privatelables';
 export const WHYMOMENTO = '/whymomento';
 export const CONTACT = '/contact';
+export const INNOVATIONS = '/innovations';
