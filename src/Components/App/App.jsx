@@ -11,6 +11,7 @@ import About from '../About/About';
 import Momento from '../OurProducts/Momento';
 import Coffino from '../OurProducts/Coffino';
 import PrivateLables from '../OurProducts/PrivateLables';
+import Innovations from '../OurProducts/Innovations';
 import WhyMomento from '../WhyMomento/WhyMomento';
 import Contact from '../Contact/Contact';
 import Navigation from '../Navigation/Navigation';
@@ -63,6 +64,11 @@ class App extends Component {
             exact
             path={routes.CONTACT}
             component={() => <Contact />}
+          />
+          <Route
+            exact
+            path={routes.INNOVATIONS}
+            component={() => <Innovations />}
           />
         </div>
       </Router>

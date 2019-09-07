@@ -124,6 +124,15 @@ class Navigation extends React.Component {
 						>
 							<ListItemText primary="Private Lables" />
 						</ListItem>
+						<ListItem
+							component={Link}
+							to={routes.INNOVATIONS}
+							className={classes.subListItem}
+							onClick={this.toggleDrawer(false)}
+							button
+						>
+							<ListItemText primary="Innovations" />
+						</ListItem>
 					</List>
 
 					<ListItem component={Link} to={routes.WHYMOMENTO} onClick={this.toggleDrawer(false)} button>
