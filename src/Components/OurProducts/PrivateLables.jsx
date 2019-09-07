@@ -51,7 +51,7 @@ class PrivateLables extends Component {
         		</Typography>
 					</Paper>
 
-					<Grid container spacing={16}>
+					<Grid container spacing={2}>
 						<Grid className={'grid'} item xs={4}>
 							<Paper className={classes.paperImg1} elevation={2}>
 								<img className="private-lables-img" src={img1} alt="momento_flajer" height="100%" align="middle" />
